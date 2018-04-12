@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>은지포트폴리오</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style_portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var jbOffset = $('#nav').offset();
+            $(window).scroll(function(){
+                if($(document).scrollTop() > jbOffset.top){
+                    $('#nav').addClass('fixed_nav')
+                }
+                else{
+                    $('#nav').removeClass('fixed_nav')
+                }
+            })
+        })
+    </script>        
+</head>
+<body>
+   <div class="section">
+       <div id="header" class="container">
+         <h1>EunJee</h1> 
+         <hr>
+         <h4>영어영문학과</h4> 
+       </div>
+   </div>
+   <div class="section">
+       <div id="nav" class="container">
+        <ul>
+            <li><a href="#introduce">소개하자</a></li>
+            <li><a href="#skills">자격증</a></li>
+            <li><a href="#experience">경력</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    
+       </div>
+   </div>
+   <div class="section">
+       <div id="introduce" class="container">
+           <h2>소개하자</h2>
+           <hr>
+           <div id="introduce_grid">
+                <div>
+                    <img src="http://img.insight.co.kr/static/2017/12/22/700/9i7w3i01e3qvghdyk494.jpg" style="height:300px" alt="웰시~~~">
+                </div>
+                <div>
+                    <p>
+                        안녕안녕~~~~<br><br>
+                        경성대 영어영문학과 <strong>이은지</strong>라고 합니다~~~<br><br>취미는 아이스크림 맛있게 먹기, 낮잠자기<br><br>
+                    </p>
+                </div>
+          </div>
+       </div>
+   </div>
+   <div class="section">
+    <div id="skills" class="container">
+            <h2>자격증</h2>
+            <hr>
+            <div id="skills_content">
+                <div class="col-1-3">
+                    <h4>?</h4>
+                </div>
+                <div class="col-1-3">
+                    <h4>!</h4>
+                </div>
+                <div class="col-1-3">
+                    <h4>^^;</h4>
+                </div>
+            </div>
+       </div> 
+   </div>
+   <div class="section">
+        <div id="experience" class="container">
+           <h2>경력</h2>
+           <hr>
+           <h4>없음;</h4> 
+           <span>
+               &bull; &nbsp; abcd &bull; abc
+           </span>
+           <div id="experience_content">
+               뭘 적어야 할까나; Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae, sit tempore molestias omnis quos quod, a optio quas dolor commodi modi laudantium reprehenderit vitae. Natus officiis consequuntur tempore placeat!
+           </div>
+           <div class="company"> 
+               <h4>회사:
+               <a href="https://uni.likelion.org/lectures">멋쟁이 사자처럼</a>
+               </h4>
+               <h4>2017-02-13</h4>
+           </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="contact" class="container">
+            <h2>연락주세요</h2>
+            <hr>
+            <div class="call">
+                Email: 
+                <a href="mailto:uniqeunj@gmail.com">uniqeunj@gmail.com</a>
+            </div>
+        </div>  
+    </div>
+
+</body>
+</html>

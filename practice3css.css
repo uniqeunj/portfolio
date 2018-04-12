@@ -1,0 +1,28 @@
+* {
+    color: white;
+    margin: 0px;
+}
+.header{
+    background-color: red;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    background-color: yellow;
+    width: 600px;
+    position: relative;
+    left: 100px;
+    margin-top: 50px;
+}
+.article {
+    background-color: purple;
+    width: 300px;
+    position: relative;
+    left: 150px;
+}
+.footer{
+    background-color: blue;
+}
